@@ -13,7 +13,7 @@ def error(message):
 
 def get_states(url, key):
   if key != None:
-    headers = {'x-ha-access': key}
+    headers = {'Authorization': 'Bearer ' + key}
   else:
     headers = {}
     
